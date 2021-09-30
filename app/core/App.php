@@ -48,6 +48,9 @@ class App
       $url = filter_var($url, FILTER_SANITIZE_URL);
       $url = explode('/', $url);
       return $url;
+    } else { // mengatasi error jika url hanya ke public (default)
+      $url = [$this->controller];
+      return $url;
     }
   }
 }
