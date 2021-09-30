@@ -2,6 +2,11 @@
 
 class App
 {
+  // property
+  protected $controller = 'Home';
+  protected $method = 'index';
+  protected $params = [];
+
   // constructor
   public function __construct()
   {
