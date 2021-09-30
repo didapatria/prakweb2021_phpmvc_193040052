@@ -1,13 +1,5 @@
-<?php
+<?php 
 
-class User_model
-{
-  // property
+class User_model {
   private $nama = 'Adinda';
-
-  // getter
-  public function getUser()
-  {
-    return $this->nama;
-  }
 }
